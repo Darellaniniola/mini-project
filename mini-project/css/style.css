@@ -1,0 +1,40 @@
+section:nth-child(1){
+    height: 100vh;
+}
+section:nth-child(1),
+section:nth-child(3) {
+    background-color: aliceblue;
+}
+
+section:nth-child(2) {
+    background-color: salmon;
+}
+
+section:nth-child(1) button.btn,
+section:nth-child(3) button.btn:first-child {
+    border: 2px solid salmon;
+    color: salmon;
+}
+
+section:nth-child(1) button.btn:hover,
+section:nth-child(3) button.btn:first-child:hover {
+    background-color: salmon;
+    color: #fff;
+}
+
+section:nth-child(2) .row>div:last-child p {
+    font-size: 18px;
+    font-family: monospace;
+}
+
+section:nth-child(2) .row>div:last-child button.btn,
+section:nth-child(3) button.btn:last-child {
+    border: 2px solid white;
+    color: white;
+}
+
+section:nth-child(2) .row>div:last-child button.btn:hover,
+section:nth-child(3) button.btn:last-child:hover {
+    background-color: white;
+    color: salmon;
+}
